@@ -9,9 +9,8 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-// Thời tiết
 async function fetchWeather(city = "Thành phố Hồ Chí Minh") {
-  const apiKey = "7d4c6ef369c5581c9b7a29b2614bffbf"; // Thay bằng API key của bạn
+  const apiKey = "7d4c6ef369c5581c9b7a29b2614bffbf";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=vi`;
   try {
     const res = await fetch(url);

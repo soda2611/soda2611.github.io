@@ -39,3 +39,17 @@ async function fetchWeather(city = "Thành phố Hồ Chí Minh") {
 }
 
 fetchWeather();
+
+function applyDeviceLayout() {
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  const content = document.getElementById('content');
+  if (isMobile) {
+    document.body.classList.add('mobile-layout');
+    if (content) content.classList.add('mobile-layout');
+  } else {
+    document.body.classList.add('desktop-layout');
+    if (content) content.classList.add('desktop-layout');
+  }
+}
+
+applyDeviceLayout();

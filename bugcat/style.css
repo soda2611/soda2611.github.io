@@ -9,18 +9,8 @@
 }
 
 @keyframes bugcat {
-    0% {left:calc(0% - 100px); transform: scaleX(-1);}
-    5% {left:0%; transform: scaleX(-1);}
-    10% {left:10%; transform: scaleX(-1);}
-    20% {left:20%; transform: scaleX(-1);}
-    30% {left:30%; transform: scaleX(-1);}
-    40% {left:40%; transform: scaleX(-1);}
-    50% {left:50%; transform: scaleX(-1);}
-    60% {left:60%; transform: scaleX(-1);}
-    70% {left:70%; transform: scaleX(-1);}
-    80% {left:80%; transform: scaleX(-1);}
-    90% {left:90%; transform: scaleX(-1);}
-    100% {left:100%; transform: scaleX(-1);}
+    from {left: -100px; transform: scaleX(-1);}
+    to {left: 100%; transform: scaleX(-1);}
 } 
 
 .clock {

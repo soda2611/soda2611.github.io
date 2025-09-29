@@ -1,0 +1,53 @@
+#bugcat {
+    position: fixed;
+    left:-100px; bottom: 0px;
+    animation-name: bugcat;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes bugcat {
+    from {left: -100px; transform: scaleX(-1);}
+    to {left: 100%; transform: scaleX(-1);}
+} 
+
+.clock {
+    font-size: calc(6vw + 6vh);
+    font-weight: bold;
+    font-family: 'Coiny', 'system-ui';
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 10vh;
+}
+
+#weather {
+    font-size: calc(1.5vw + 1.5vh);
+    font-weight: bold;
+    font-family: 'Patrick Hand SC', 'system-ui';
+    color: #ffffff;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    bottom: 12vh;
+}
+
+.weather-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+#weather {
+    position: fixed;
+    bottom: 15vh;
+}
+
+#weather-img {
+  width: 75px;
+  height: auto;
+}

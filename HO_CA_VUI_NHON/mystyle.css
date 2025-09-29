@@ -1,20 +1,21 @@
-#turtle {
-    left:0%; top:200px;
-    position: relative;
-    animation-name: turtle;
-    animation-duration: 10s;
+#bugcat {
+    position: fixed;
+    left:0%; bottom: 0px;
+    animation-name: clownfish;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
 
-@keyframes turtle {
-    20% {left:20%; transform: scaleX(1);}
-    400% {left:50%; transform: scaleX(1);}
-    50% {left:calc(100% - 200px); transform: scaleX(1);}
-    60% {left:calc(100% - 200px); transform: scaleX(-1);}
-    60% {left:50%; transform: scaleX(-1);}
-    80% {left:20%; transform: scaleX(-1);}
-    90% {left:0%; transform: scaleX(-1);}
-    100% {left:0%; transform: scaleX(1);}
+@keyframes clownfish {
+    0% {left:calc(100% - 75px); transform: scaleX(1);}
+    20% {left:50%; transform: scaleX(1);}
+    30% {left:20%; transform: scaleX(1);}
+    40% {left:0%; transform: scaleX(1);}
+    50% {left:0%; transform: scaleX(-1);}
+    60% {left:20%; transform: scaleX(-1);}
+    70% {left:50%; transform: scaleX(-1);}
+    80% {left:calc(100% - 75px); transform: scaleX(-1);}
+    100% {left:calc(100% - 75px); transform: scaleX(1);}
 }

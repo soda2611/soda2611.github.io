@@ -2,22 +2,23 @@
     position: fixed;
     left:-100px; bottom: 0px;
     animation-name: bugcat;
-    animation-duration: 15s;
+    animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
 
 @keyframes bugcat {
-    0% {left:-100px; transform: scaleX(-1); rotate: 0deg;}
-    10% {left:10%; transform: scaleX(-1); rotate: 0deg}
-    20% {left:20%; transform: scaleX(-1); rotate: 0deg}
-    30% {left:30%; transform: scaleX(-1); rotate: 0deg}
-    40% {left:40%; transform: scaleX(-1); rotate: 0deg}
-    50% {left:50%; transform: scaleX(-1); rotate: 0deg}
-    60% {left:60%; transform: scaleX(-1); rotate: 0deg}
-    70% {left:70%; transform: scaleX(-1); rotate: 0deg}
-    80% {left:80%; transform: scaleX(-1); rotate: 0deg}
-    90% {left:90%; transform: scaleX(-1); rotate: 0deg}
-    100% {left:100%; transform: scaleX(-1); rotate: 0deg}
+    0% {left:-100px; transform: scaleX(-1);}
+    5% {left:0%; transform: scaleX(-1);}
+    10% {left:10%; transform: scaleX(-1);}
+    20% {left:20%; transform: scaleX(-1);}
+    30% {left:30%; transform: scaleX(-1);}
+    40% {left:40%; transform: scaleX(-1);}
+    50% {left:50%; transform: scaleX(-1);}
+    60% {left:60%; transform: scaleX(-1);}
+    70% {left:70%; transform: scaleX(-1);}
+    80% {left:80%; transform: scaleX(-1);}
+    90% {left:90%; transform: scaleX(-1);}
+    100% {left:100%; transform: scaleX(-1);}
 }   

@@ -4,6 +4,10 @@ function updateClock() {
   const minutes = String(now.getMinutes()).padStart(2, '0');
   const seconds = String(now.getSeconds()).padStart(2, '0');
   document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
+  const days = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
+  const dayName = days[now.getDay()];
+  const dateStr = `${dayName}, ${now.getDate()}/${now.getMonth()+1}/${now.getFullYear()}`;
+  document.getElementById('date').textContent = dateStr;
 }
 
 setInterval(updateClock, 1000);

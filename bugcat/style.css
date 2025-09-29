@@ -33,3 +33,14 @@
     width: 100%;
     top: 10vh;
 }
+
+#weather {
+    font-size: calc(1.5vw + 1.5vh);
+    font-weight: bold;
+    font-family: 'Patrick Hand SC', 'system-ui';
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 12vh;
+}

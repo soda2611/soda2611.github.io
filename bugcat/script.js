@@ -8,3 +8,27 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+// Thời tiết
+async function fetchWeather(city = "Thành phố Hồ Chí Minh") {
+  const apiKey = "7d4c6ef369c5581c9b7a29b2614bffbf"; // Thay bằng API key của bạn
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=vi`;
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    if (data.cod === 200) {
+      const weatherDiv = document.getElementById("weather");
+      weatherDiv.innerHTML = `
+        <b>Thời tiết tại ${data.name}:</b><br>
+${data.weather[0].description}, ${data.main.temp}°C<br>
+        <img src='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>
+      `;
+    } else {
+      document.getElementById("weather").textContent = "Không lấy được dữ liệu thời tiết.";
+    }
+  } catch {
+    document.getElementById("weather").textContent = "Lỗi kết nối thời tiết.";
+  }
+}
+
+fetchWeather();

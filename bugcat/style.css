@@ -25,7 +25,7 @@
 }
 
 #weather {
-    font-size: calc(1vw + 1vh);
+    font-size: calc(1.5vw + 1.5vh);
     font-weight: bold;
     font-family: 'Patrick Hand SC', 'system-ui';
     color: #ffffff;

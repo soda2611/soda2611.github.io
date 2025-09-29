@@ -24,11 +24,12 @@
 } 
 
 .clock {
-    font-size: 100px;
+    font-size: calc(6vw + 6vh);
     font-weight: bold;
     font-family: 'Coiny', 'system-ui';
     color: #ffffff;
     text-align: center;
-    position: relative;
-    top: 70px;
+    position: fixed;
+    width: 100%;
+    top: 10vh;
 }

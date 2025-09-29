@@ -9,7 +9,7 @@
 }
 
 @keyframes bugcat {
-    0% {left:0%; transform: scaleX(-1);}
+    0% {left:-100px; transform: scaleX(-1); rotate: 0deg;}
     10% {left:10%; transform: scaleX(-1); rotate: 0deg}
     20% {left:20%; transform: scaleX(-1); rotate: 0deg}
     30% {left:30%; transform: scaleX(-1); rotate: 0deg}

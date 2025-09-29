@@ -24,6 +24,16 @@
     top: 10vh;
 }
 
+#date {
+    font-size: calc(1.5vw + 1.5vh);
+    font-weight: bold;
+    font-family: 'Coiny', 'system-ui';
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
 #weather {
     font-size: calc(1.5vw + 1.5vh);
     font-weight: bold;

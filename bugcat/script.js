@@ -19,9 +19,13 @@ async function fetchWeather(city = "Thành phố Hồ Chí Minh") {
     if (data.cod === 200) {
       const weatherDiv = document.getElementById("weather");
       weatherDiv.innerHTML = `
-        <b>Thời tiết tại ${data.name}:</b><br>
-${data.weather[0].description}, ${data.main.temp}°C<br>
-        <img src='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>
+        <div id="weather" class="weather-container">
+          <img id="weather-img" src='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>
+          <div id="weather-info">
+            <b>Thời tiết tại ${data.name}:</b><br>
+            ${data.weather[0].description}, ${data.main.temp}°C
+          </div>
+        </div>
       `;
     } else {
       document.getElementById("weather").textContent = "Không lấy được dữ liệu thời tiết.";

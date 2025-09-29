@@ -21,4 +21,14 @@
     80% {left:80%; transform: scaleX(-1);}
     90% {left:90%; transform: scaleX(-1);}
     100% {left:100%; transform: scaleX(-1);}
-}   
+} 
+
+.clock {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Coiny', 'system-ui';
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}

@@ -15,7 +15,6 @@
 
 .clock {
     font-size: calc(5vw + 5vh);
-    font-weight: bold;
     font-family: 'Coiny', 'system-ui';
     color: #ffffff;
     text-align: center;
@@ -26,7 +25,6 @@
 
 #date {
     font-size: 20px;
-    font-weight: bold;
     font-family: 'Coiny', 'system-ui';
     color: #ffffff;
     text-align: center;
@@ -35,7 +33,6 @@
 
 #weather {
     font-size: 25px;
-    font-weight: bold;
     font-family: 'Patrick Hand SC', 'system-ui';
     color: #ffffff;
     text-align: left;

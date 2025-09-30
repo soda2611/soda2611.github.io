@@ -10,8 +10,6 @@
 
 #bugcat:hover {
     animation-play-state: paused;
-    transform: scaleX(1);
-    transition: transform 0.5s;
 }
 
 @keyframes bugcat {
@@ -89,5 +87,5 @@
 
 #weather-img {
   width: 100px;
-  height: auto;
+  height: auto;;
 }

@@ -25,7 +25,7 @@ async function fetchWeather(city = "Thành phố Hồ Chí Minh") {
         <div id="weather" class="weather-container">
           <img id="weather-img" src='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>
           <div id="weather-info">
-            <b>${data.name}:</b><br>
+            <font size="4vh">${data.name}:</font><br>
             ${data.weather[0].description}, ${data.main.temp}°C
           </div>
         </div>

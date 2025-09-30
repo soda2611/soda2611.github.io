@@ -8,10 +8,6 @@
     animation-play-state: running;
 }
 
-#bugcat:hover {
-    animation-play-state: paused;
-}
-
 @keyframes bugcat {
     from {left: -100px; transform: scaleX(-1);}
     to {left: 100%; transform: scaleX(-1);}

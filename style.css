@@ -8,6 +8,12 @@
     animation-play-state: running;
 }
 
+#bugcat:hover {
+    animation-play-state: paused;
+    transform: scaleX(1);
+    transition: transform 0.5s;
+}
+
 @keyframes bugcat {
     from {left: -100px; transform: scaleX(-1);}
     to {left: 100%; transform: scaleX(-1);}
@@ -23,12 +29,32 @@
     top: 5vh;
 }
 
+#time {
+    color: #ffffff;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+#time:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+    transition: color 0.5s, text-shadow 0.5s;
+    cursor: default;
+}
+
 #date {
     font-size: 20px;
     font-family: 'Coiny', 'system-ui';
     color: #ffffff;
     text-align: center;
     position: relative;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+#date:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+    transition: color 0.5s, text-shadow 0.5s;
+    cursor: default;
 }
 
 #weather {
@@ -38,6 +64,14 @@
     text-align: left;
     position: fixed;
     width: 100%;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+#weather:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+    transition: color 0.5s, text-shadow 0.5s;
+    cursor: default;
 }
 
 .weather-container {
@@ -45,6 +79,12 @@
   align-items: center;
   gap: 16px;
   justify-content: center;
+}
+
+.weather-container:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+    transition: color 0.5s, text-shadow 0.5s;
 }
 
 #weather-img {

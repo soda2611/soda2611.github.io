@@ -25,7 +25,7 @@
 }
 
 #date {
-    font-size: calc(1vw + 1vh);
+    font-size: calc(2vw + 1vh);
     font-weight: bold;
     font-family: 'Coiny', 'system-ui';
     color: #ffffff;
@@ -34,7 +34,7 @@
 }
 
 #weather {
-    font-size: calc(2vw + 2vh);
+    font-size: calc(1.5vw + 1.5vh);
     font-weight: bold;
     font-family: 'Patrick Hand SC', 'system-ui';
     color: #ffffff;

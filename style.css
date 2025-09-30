@@ -95,7 +95,7 @@
 
 .sidenav {
   border-radius: 0 25px 25px 0;
-  height: 100%;
+  height: calc(100% - 63px);
   width: 250px;
   position: fixed;
   z-index: 1;

@@ -17,6 +17,35 @@
     to {left: 100%; transform: scaleX(-1);}
 } 
 
+#menu-button{
+    background-color: #88b8da;
+    border: 0;
+    border-radius: 3.5rem;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Coiny', 'system-ui';
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    transition: color 0.5s, text-shadow 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#menu-button:hover {
+    background-color: #ffcc00;
+    color: #000000;
+    text-shadow: 0 0 10px #ffcc00;
+    transition: color 0.5s, text-shadow 0.5s, background-color 0.5s;
+    cursor: pointer;
+}
+
+#menu-icon {
+    width: 26px;
+}
+
 .clock {
     font-size: calc(5vw + 5vh);
     font-family: 'Coiny', 'system-ui';

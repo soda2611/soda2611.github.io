@@ -70,14 +70,6 @@
     color: #ffffff;
     text-align: center;
     position: relative;
-    transition: color 0.5s, text-shadow 0.5s;
-}
-
-#date:hover {
-    color: #ffcc00;
-    text-shadow: 0 0 10px #ffcc00;
-    transition: color 0.5s, text-shadow 0.5s;
-    cursor: default;
 }
 
 #weather {
@@ -87,14 +79,6 @@
     text-align: left;
     position: fixed;
     width: 100%;
-    transition: color 0.5s, text-shadow 0.5s;
-}
-
-#weather:hover {
-    color: #ffcc00;
-    text-shadow: 0 0 10px #ffcc00;
-    transition: color 0.5s, text-shadow 0.5s;
-    cursor: default;
 }
 
 .weather-container {
@@ -102,12 +86,6 @@
   align-items: center;
   gap: 16px;
   justify-content: center;
-}
-
-.weather-container:hover {
-    color: #ffcc00;
-    text-shadow: 0 0 10px #ffcc00;
-    transition: color 0.5s, text-shadow 0.5s;
 }
 
 #weather-img {

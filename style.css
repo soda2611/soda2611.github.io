@@ -123,6 +123,7 @@
   font-family: "Coiny", "system-ui";
   color: #f1f1f1;
   background-color: #88b8da;
+  cursor: pointer;
 }
 
 .sidenav a:hover {

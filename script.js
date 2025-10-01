@@ -6,7 +6,7 @@ function updateClock() {
   document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
   const days = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
   const dayName = days[now.getDay()];
-  const dateStr = `${dayName}, ${now.getDate()}/${now.getMonth()+1}/${now.getFullYear()}`;
+  const dateStr = `${dayName}, ${now.getDate()}-${now.getMonth()+1}-${now.getFullYear()}`;
   document.getElementById('date').textContent = dateStr;
 }
 

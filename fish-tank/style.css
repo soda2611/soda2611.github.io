@@ -27,21 +27,21 @@
     width: 26px;
 }
 
-#turtle {
-    position: fixed;
-    left:-100px; bottom: 0px;
-    animation-name: turtle;
-    animation-duration: 20s;
+#diver {
+    position: absolute;
+    left:-100px; top: 0px;
+    animation-name: diver;
+    animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
 
-#shark {
-    position: absolute;
-    left:-100px; bottom: 150px;
-    animation-name: shark;
-    animation-duration: 10s;
+#turtle {
+    position: fixed;
+    left:-100px; bottom: 100px;
+    animation-name: turtle;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -59,12 +59,44 @@
 
 #fish1 {
     position: absolute;
-    left: -100px; bottom: 300px;
-    animation-name: turtle;
+    right: -100px; bottom: 300px;
+    animation-name: fish1;
     animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
+}
+
+#seaweed {
+    position: fixed;
+    left: 0%; bottom: -20px;
+}
+
+#seaweed1 {
+    position: fixed;
+    left: 25%; bottom: -20px;
+}
+
+#seaweed2 {
+    position: fixed;
+    right: 25%; bottom: -20px;
+}
+
+#seaweed3 {
+    position: fixed;
+    right: 0%; bottom: -20px;
+}
+
+@keyframes diver{
+    0% {left: 0%; top: 0%; transform: scaleX(1);}
+    24% {left: 25%; top: 50%; transform: scaleX(1);}
+    25% {left: 25%; top: 50%; transform: scaleX(-1);}
+    49%{left: 0%; top: 75%; transform: scaleX(-1);}
+    50%{left: 0%; top: 75%; transform: scaleX(1);}
+    69% {left: calc(100% - 300px); top: 25%; transform: scaleX(1);}
+    70% {left: calc(100% - 300px); top: 25%; transform: scaleX(-1);}
+    99% {left: 0%; top: 0%; transform: scaleX(-1);}
+    100% {left: 0%; top: 0%; transform: scaleX(1);}
 }
 
 @keyframes turtle{
@@ -75,12 +107,18 @@
     100% {left: 0%; transform: scaleX(1);}
 }
 
-@keyframes shark {
-    0% {left: 0%; bottom: 150px;}
-    20% {bottom: 50px;}
-    49% {left: calc(100% - 300px); bottom: 300px; transform: scaleX(1);}
-    50% {left: calc(100% - 300px); bottom: 300px; transform: scaleX(-1);}
-    99% {left: 0%; bottom: 150px; transform: scaleX(-1);}
-    100% {left: 0%; bottom: 150px; transform: scaleX(1);}
+@keyframes fish{
+    0% {left: 0%; transform: scaleX(1);}
+    49% {left: calc(100% - 150px); transform: scaleX(1);}
+    50% {left: calc(100% - 150px); transform: scaleX(-1);}
+    99% {left: 0%; transform: scaleX(-1);}
+    100% {left: 0%; transform: scaleX(1);}
 }
-    
+
+@keyframes fish1{
+    0% {right: 0%; transform: scaleX(-1);}
+    49% {right: calc(100% - 150px); transform: scaleX(-1);}
+    50% {right: calc(100% - 150px); transform: scaleX(1);}
+    99% {right: 0%; transform: scaleX(1);}
+    100% {right: 0%; transform: scaleX(-1);}
+}

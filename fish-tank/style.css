@@ -1,3 +1,32 @@
+#menu-button{
+    background-color: #88b8da;
+    border: 0;
+    border-radius: 3.5rem;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Coiny", "system-ui";
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    transition: color 0.5s, text-shadow 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#menu-button:hover {
+    background-color: #ffcc00;
+    color: #000000;
+    text-shadow: 0 0 10px #ffcc00;
+    transition: color 0.5s, text-shadow 0.5s, background-color 0.5s;
+    cursor: pointer;
+}
+
+#menu-icon {
+    width: 26px;
+}
+
 #turtle {
     position: fixed;
     left:-100px; bottom: 0px;

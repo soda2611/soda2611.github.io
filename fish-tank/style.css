@@ -84,6 +84,31 @@
 
 #seaweed3 {
     position: fixed;
+    left: 50%; bottom: -20px;
+}
+
+#seaweed4 {
+    position: fixed;
+    right: 75%; bottom: -20px;
+}
+
+#seaweed5 {
+    position: fixed;
+    right: 75%; bottom: -20px;
+}
+
+#seaweed6 {
+    position: fixed;
+    right: 50%; bottom: -20px;
+}
+
+#seaweed7 {
+    position: fixed;
+    right: 25%; bottom: -20px;
+}
+
+#seaweed8 {
+    position: fixed;
     right: 0%; bottom: -20px;
 }
 

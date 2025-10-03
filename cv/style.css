@@ -73,3 +73,11 @@
     color: #ffffff;
     padding: 30px;
 }
+
+.contact {
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    border-radius: 2vw;
+    bottom: 0%
+}

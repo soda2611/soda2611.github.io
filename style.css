@@ -6,12 +6,18 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
+    rotate: 0deg;
+}
+
+#bugcat:hover {
+    rotate: -360deg;
+    transition: rotate 1s;
 }
 
 @keyframes bugcat {
     from {left: -100px; transform: scaleX(-1);}
     to {left: 100%; transform: scaleX(-1);}
-} 
+}
 
 #menu-button{
     background-color: #88b8da;

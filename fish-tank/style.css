@@ -67,6 +67,16 @@
     animation-play-state: running;
 }
 
+#clownfish {
+    position: absolute;
+    right: -100px; top: 150px;
+    animation-name: clownfish;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
 #seaweed {
     position: fixed;
     left: 0%; bottom: -20px;
@@ -146,4 +156,12 @@
     50% {right: calc(100% - 150px); transform: scaleX(1);}
     99% {right: 0%; transform: scaleX(1);}
     100% {right: 0%; transform: scaleX(-1);}
+}
+
+@keyframes clownfish{
+    0% {right: 0%; transform: scaleX(1);}
+    49% {right: calc(100% - 100px); transform: scaleX(1);}
+    50% {right: calc(100% - 100px); transform: scaleX(-1);}
+    99% {right: 0%; transform: scaleX(-1);}
+    100% {right: 0%; transform: scaleX(1);}
 }

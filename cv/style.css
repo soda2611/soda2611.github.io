@@ -61,19 +61,19 @@
 }
 
 #decor {
-    position: absolute;
+    position: relative;
     width: 100px;
     height: 100px;
-    top: 300px;
-    left: 200px;
+    top: -60px;
+    left: 145px;
 }
 
 #content {
     font-family: "Coiny", "system-ui";
     color: #ffffff;
     padding: 30px;
-    max-width: 1500px;
-    min-width: 700px;
+    position: inherit;
+    justify-items: center;
 }
 
 .contact {

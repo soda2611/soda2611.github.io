@@ -10,59 +10,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Coiny&family=Pacifico&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: #3383be; background-image: url('images/bg/bg.png'); background-repeat: no-repeat; background-attachment:fixed; background-size: 30vh; background-position: center">
+<body style="background-color: #3383be; background-image: url('images/bg/bg.png'); background-repeat: no-repeat; background-attachment:fixed; background-size: 30vh; background-position: center;">
     <div id="content">
-        <br>
-        <div id="basic-info">
-            <div id="avt-frame">
-                <div id="avt">
-                    <img id="image" src="../images/bg/bg.gif" alt="Avatar">
+        <div style="width: 100%; max-width: 1000px; min-width: 200px;">
+            <br>
+            <div id="basic-info">
+                <div id="avt-frame">
+                    <div id="avt">
+                        <img id="image" src="../images/bg/bg.gif" alt="Avatar">
+                    </div>
+                    <img id="decor" src="../images/bugcat.png" alt="Avatar">
                 </div>
-                <img id="decor" src="../images/bugcat.png" alt="Avatar">
+                <div>
+                    <p>Họ và tên: <span style="font-family: 'Patrick Hand SC', 'system-ui';">[name]</span></p>
+                    <p>Ngày sinh: <span style="font-family: 'Patrick Hand SC', 'system-ui';">[date]</span></p>
+                    <hr>
+                    <p style="font-family: 'Patrick Hand SC', 'system-ui';">
+                        [Description]
+                    </p>
+                </div>
             </div>
-            <div>
-                <p>Họ và tên: <span style="font-family: 'Patrick Hand SC', 'system-ui';">[name]</span></p>
-                <p>Ngày sinh: <span style="font-family: 'Patrick Hand SC', 'system-ui';">[date]</span></p>
+            <div id="contact" style="display: flex; gap: 20px; background-color: #72aeda; padding: 10px; justify-content: center; align-items: center; border-radius: 2vw; width: 200px; height: 50px;">
+                <a class="contact"><img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/ay1hV6OlegS.ico" style="width: 30px;"></a>
+                <a class="contact"><img src="https://static.cdninstagram.com/rsrc.php/v4/yI/r/VsNE-OHk_8a.png" style="width: 30px;"></a>
+                <a class="contact" style="height: 40px;"><img src="https://img.icons8.com/fluency/96/microsoft-outlook-2019.png" style="width: 40px;"></a>
+                <a class="contact" style="border-radius: 25px; background-color: white;"><img src="https://github.githubassets.com/favicons/favicon.svg" style="width: 30px;"></a>
+            </div>
+            <br>
+            <div style="display: flex; align-items: center; text-align: center;">
+                <hr style="flex: 1;">
+                <span style="padding: 0 10px; font-size: 35px;">Title 1</span>
+                <hr style="flex: 1;">
+            </div>
+            <br>
+            <div id="bio">
+                <h2>[Period 1]</h2>
+                <p>[Content 1]</p>
                 <hr>
-                <p style="font-family: 'Patrick Hand SC', 'system-ui';">
-                    [Description]
-                </p>
+                <h2>[Period 2]</h2>
+                <p>[Content 2]</p>
+                <hr>
+                <h2>[Period 3]</h2>
+                <p>[Content 3]</p>
+                <hr>
+                <h2>[Period 4]</h2>
+                <p>[Content 4]</p>
             </div>
+            <br>
+            <div style="display: flex; align-items: center; text-align: center;">
+                <hr style="flex: 1;">
+                <span style="padding: 0 10px; font-size: 35px;">Title 2</span>
+                <hr style="flex: 1;">
+            </div>
+            [content]
         </div>
-        <br>
-        <div id="contact" style="display: flex; gap: 20px; background-color: #72aeda; padding: 10px; justify-content: center; align-items: center; border-radius: 2vw; width: 200px; height: 50px;">
-            <a class="contact"><img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/ay1hV6OlegS.ico" style="width: 30px;"></a>
-            <a class="contact"><img src="https://static.cdninstagram.com/rsrc.php/v4/yI/r/VsNE-OHk_8a.png" style="width: 30px;"></a>
-            <a class="contact" style="height: 40px;"><img src="https://img.icons8.com/fluency/96/microsoft-outlook-2019.png" style="width: 40px;"></a>
-            <a class="contact" style="border-radius: 25px; background-color: white;"><img src="https://github.githubassets.com/favicons/favicon.svg" style="width: 30px;"></a>
-        </div>
-        <br>
-        <div style="display: flex; align-items: center; text-align: center;">
-            <hr style="flex: 1;">
-            <span style="padding: 0 10px; font-size: 35px;">Title 1</span>
-            <hr style="flex: 1;">
-        </div>
-        <br>
-        <div id="bio">
-            <h2>[Period 1]</h2>
-            <p>[Content 1]</p>
-            <hr>
-            <h2>[Period 2]</h2>
-            <p>[Content 2]</p>
-            <hr>
-            <h2>[Period 3]</h2>
-            <p>[Content 3]</p>
-            <hr>
-            <h2>[Period 4]</h2>
-            <p>[Content 4]</p>
-        </div>
-        <br>
-        <div style="display: flex; align-items: center; text-align: center;">
-            <hr style="flex: 1;">
-            <span style="padding: 0 10px; font-size: 35px;">Title 2</span>
-            <hr style="flex: 1;">
-        </div>
-        [content]
     </div>
     <div style="background-color: #3383be; width: 100%; height: 50px; position: fixed; top: 0">
         <a href=".."><button id="menu-button"><img id="menu-icon" src="../images/bugcat.png">Back</button></a>

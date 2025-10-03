@@ -41,7 +41,7 @@
     width: 200px;
     height: 300px;
     border: 5px solid #72aeda;
-    border-radius: 2vw;
+    border-radius: 1cm;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -56,7 +56,7 @@
     position: inherit;
     top: 400px;
     background-color: #72aeda;
-    border-radius: 2vw;
+    border-radius: 1cm;
     padding: 15px;
 }
 

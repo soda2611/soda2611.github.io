@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Coiny&family=Pacifico&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #3383be; background-image: url('images/bg/bg.png'); background-repeat: no-repeat; background-attachment:fixed; background-size: 30vh; background-position: center;">
-    <a href="javascript:void(0)" onclick="openNav()"><button id="menu-button"><img id="menu-icon" src="images/bugcat.png">Menu</button></a>
+    <a onclick="openNav()"><button id="menu-button"><img id="menu-icon" src="images/bugcat.png">Menu</button></a>
     <div id="content">
         <div class="clock">
             <span id="time"></span>
@@ -23,9 +23,8 @@
         </div>
     </div>
     <script src="script.js"></script>
-    <audio src="lofi.wav" autoplay loop></audio>
     <div id="sidenav" class="sidenav">
-        <a id="close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id="close" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="fish-tank">Hồ cá</a>
         <a href="cv">CV</a>
         <p id="credits">51.01.104.065 - Hồ Minh Nhật</p>

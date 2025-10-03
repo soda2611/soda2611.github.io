@@ -1,0 +1,75 @@
+#menu-button{
+    background-color: #88b8da;
+    border: 0;
+    border-radius: 3.5rem;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Coiny", "system-ui";
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    transition: color 0.5s, text-shadow 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    top: 10px
+}
+
+#menu-button:hover {
+    background-color: #ffcc00;
+    color: #000000;
+    text-shadow: 0 0 10px #ffcc00;
+    transition: color 0.5s, text-shadow 0.5s, background-color 0.5s;
+    cursor: pointer;
+}
+
+#menu-icon {
+    width: 26px;
+}
+
+#basic-info {
+    font-size: 25px;
+    position: inherit;
+    display: flex;
+    gap: 070px;
+}
+
+#avt {
+    overflow: hidden;
+    position: inherit;
+    width: 200px;
+    height: 300px;
+    border: 5px solid #72aeda;
+    border-radius: 2vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#image {
+    width: inherit;
+}
+
+#bio {
+    font-size: 15px;
+    position: inherit;
+    top: 400px;
+    background-color: #72aeda;
+    border-radius: 2vw;
+    padding: 15px;
+}
+
+#decor {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 300px;
+    left: 200px;
+}
+
+#content {
+    font-family: "Coiny", "system-ui";
+    color: #ffffff;
+    padding: 30px;
+}

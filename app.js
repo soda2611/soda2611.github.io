@@ -9,7 +9,7 @@ function MyApp() {
       Container,
       { maxWidth: 'sm', style: { textAlign: 'center', backgroundColor: 'red' } },
       React.createElement(Typography, { variant: 'h4', gutterBottom: true }, 'Adu vcl'),
-      React.createElement(Button, {variant: 'contained', }, 'adu',)
+      React.createElement(Button, {variant: 'contained', }, 'adu',),
     )
   );
 }

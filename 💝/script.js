@@ -74,3 +74,9 @@ document.getElementById('startRain').addEventListener('click', () => {
     rainInterval = setInterval(createHeart, 200);
   }
 });
+
+document.getElementById('escapeBox').addEventListener('click', () => {
+  if (!rainInterval) {
+    rainInterval = setInterval(createHeart, 200);
+  }
+});

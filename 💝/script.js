@@ -1,6 +1,7 @@
 const box = document.getElementById('escapeBox');
 const text = document.getElementById('time');
-const nah = document.getElementById('startRain')
+const nah = document.getElementById('startRain');
+const button = document.getElementById('escapeButton');
 
 function accept() {
   text.textContent = "💝Chị Hà dỏi qa, thương chị Hà lắm á";
@@ -12,7 +13,8 @@ function accept() {
 }
 
 box.addEventListener('mouseenter', (e) => {
-  const mouseX = e.clientX;
+  button.innerText = "💝ôke💝";
+  /*const mouseX = e.clientX;
   const mouseY = e.clientY;
 
   const boxWidth = box.offsetWidth;
@@ -21,7 +23,7 @@ box.addEventListener('mouseenter', (e) => {
   const maxX = window.innerWidth - boxWidth;
   const maxY = window.innerHeight - boxHeight;
 
-  const minDistance = 200; // khoảng cách tối thiểu từ con trỏ
+  const minDistance = 200;
 
   let randomX, randomY, distance;
 
@@ -33,12 +35,15 @@ box.addEventListener('mouseenter', (e) => {
     distance = Math.sqrt(dx * dx + dy * dy);
   } while (distance < minDistance);
 
-  // Đảm bảo không vượt quá màn hình
   randomX = Math.min(Math.max(0, randomX), maxX);
   randomY = Math.min(Math.max(0, randomY), maxY);
 
   box.style.left = `${randomX}px`;
-  box.style.top = `${randomY}px`;
+  box.style.top = `${randomY}px`;*/
+});
+
+box.addEventListener('mouseleave', (e) => {
+  button.innerText = "💔hong💔";
 });
 
 let rainInterval;

@@ -9,11 +9,6 @@
     rotate: 0deg;
 }
 
-#bugcat:hover {
-    rotate: -360deg;
-    transition: rotate 1s;
-}
-
 @keyframes bugcat {
     from {left: -100px; transform: scaleX(-1);}
     to {left: 100%; transform: scaleX(-1);}
@@ -101,13 +96,14 @@
 
 .sidenav {
   border-radius: 0 25px 25px 0;
-  height: calc(100% - 63px);
-  width: 250px;
+  border: 2px solid #ffffff;
+  height: calc(100% - 65px);
+  width: 300px;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: -250px;
-  background-color: #88b8da;
+  top: 0px;
+  left: -305px;
+  backdrop-filter: blur(10px);
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -128,13 +124,13 @@
   height: 15px;
   font-family: "Coiny", "system-ui";
   color: #f1f1f1;
-  background-color: #88b8da;
+  background-color: transparent;
   cursor: pointer;
 }
 
 .sidenav a:hover {
   color: #000000;
-  background-color: #ffcc00;
+  background-color: #88b8da;
 }
 
 .sidenav .closebtn {

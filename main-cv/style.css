@@ -1,22 +1,5 @@
-.contact-button{
-    background-color: #88b8da;
-    border: 0;
-    border-radius: 3.5rem;
-    cursor: pointer;
-    font-size: 15px;
-    font-family: "Coiny", "system-ui";
-    color: #ffffff;
-    text-align: center;
-    position: relative;
-    transition: color 0.5s, text-shadow 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
 #menu-button{
-    background-color: #88b8da;
+    background-color: #1f1f1f;
     border: 0;
     border-radius: 3.5rem;
     cursor: pointer;
@@ -34,10 +17,9 @@
 }
 
 #menu-button:hover {
-    background-color: #ffcc00;
+    background-color: #ffffff;
     color: #000000;
-    text-shadow: 0 0 10px #ffcc00;
-    transition: color 0.5s, text-shadow 0.5s, background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s;
     cursor: pointer;
 }
 
@@ -57,17 +39,16 @@
     color: white;
     font-family: 'Coiny';
     height: 100%;
-    width: 40%;
+    width: 350px;
     left: 0;
     bottom: 0;
+    overflow: auto;
 }
 
 #basic-info {
     position: absolute;
     color: white;
     font-family: 'Coiny';
-    height: calc(100% - 200px);
-    width: 100%;
     left: 0;
     top: 175px;
     padding: 15px
@@ -96,7 +77,14 @@
     background-color: white;
     font-family: 'Coiny';
     height: 100%;
-    width: 60%;
+    width: calc(100% - 350px);
     right: 0;
     bottom: 0;
+}
+
+.contact {
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    bottom: 0%
 }

@@ -81,7 +81,6 @@
     right: 0;
     bottom: 0;
     overflow: auto;
-    min-width: 500px;
 }
 
 .contact {
@@ -89,4 +88,23 @@
     position: relative;
     height: 30px;
     bottom: 0%
+}
+
+.skill {
+    width: 200px;
+    height: 10px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 10cm;
+    right: 0;
+}
+
+.inner-skill {
+    height: 10px;
+    background-color: rgb(65, 179, 255);
+    border-radius: 10cm;
+    right: 0;
+}
+
+.skill-container {
+    font-size: 12px;
 }

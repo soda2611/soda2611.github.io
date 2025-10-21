@@ -1,4 +1,4 @@
-#menu-button{
+.menu-button{
     background-color: #1f1f1f;
     border: 0;
     border-radius: 3.5rem;
@@ -8,7 +8,7 @@
     color: #ffffff;
     text-align: center;
     position: fixed;
-    transition: color 0.5s, text-shadow 0.5s;
+    transition: color 0.5s, background-color 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
     top: 10px
 }
 
-#menu-button:hover {
+.menu-button:hover {
     background-color: #ffffff;
     color: #000000;
     transition: color 0.5s, background-color 0.5s;
@@ -80,6 +80,8 @@
     width: calc(100% - 350px);
     right: 0;
     bottom: 0;
+    overflow: auto;
+    min-width: 500px;
 }
 
 .contact {

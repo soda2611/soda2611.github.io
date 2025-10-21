@@ -1,5 +1,5 @@
 #menu-button{
-    background-color: #88b8da;
+    background-color: #1f1f1f;
     border: 0;
     border-radius: 3.5rem;
     cursor: pointer;
@@ -17,10 +17,9 @@
 }
 
 #menu-button:hover {
-    background-color: #ffcc00;
+    background-color: #ffffff;
     color: #000000;
-    text-shadow: 0 0 10px #ffcc00;
-    transition: color 0.5s, text-shadow 0.5s, background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s;
     cursor: pointer;
 }
 
@@ -28,23 +27,45 @@
     width: 26px;
 }
 
-#basic-info {
-    font-size: 25px;
-    position: inherit;
+#content {
     display: flex;
-    gap: 070px;
+    align-items: center;
+    justify-content: center;
+}
+
+#info {
+    position: fixed;
+    background-color: black;
+    color: white;
+    font-family: 'Coiny';
+    height: 100%;
+    width: 350px;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+#basic-info {
+    position: absolute;
+    color: white;
+    font-family: 'Coiny';
+    left: 0;
+    top: 175px;
+    padding: 15px
 }
 
 #avt {
     overflow: hidden;
-    position: inherit;
-    width: 200px;
-    height: 300px;
-    border: 5px solid #72aeda;
-    border-radius: 1cm;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ffffff;
+    border-radius: 10cm;
     align-items: center;
     justify-content: center;
     display: flex;
+    left: calc(50% - 55px);
+    top: 75px
 }
 
 #image {
@@ -52,28 +73,13 @@
 }
 
 #bio {
-    font-size: 15px;
-    position: inherit;
-    top: 400px;
-    background-color: #72aeda;
-    border-radius: 1cm;
-    padding: 15px;
-}
-
-#decor {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    top: -60px;
-    left: 145px;
-}
-
-#content {
-    font-family: "Coiny", "system-ui";
-    color: #ffffff;
-    padding: 30px;
-    position: inherit;
-    justify-items: center;
+    position: absolute;
+    background-color: white;
+    font-family: 'Coiny';
+    height: 100%;
+    width: calc(100% - 350px);
+    right: 0;
+    bottom: 0;
 }
 
 .contact {

@@ -1,42 +1,24 @@
-// cv/script.js
-// Check viewport width and toggle a class + dispatch an event
-(function () {
-  /**
-   * Returns true if the viewport width is less than 800px.
-   */
-  function isSmallScreen() {
-    return window.innerWidth < 850;
-  }
+let rainInterval;
 
-  function updateScreenClass() {
-    const small = isSmallScreen();
-    document.body.classList.toggle('small-screen', small);
-    // dispatch custom event so other scripts can react
-    const ev = new CustomEvent('screenSizeChange', { detail: { small } });
-    window.dispatchEvent(ev);
-    return small;
-  }
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.classList.add('heart');
+  heart.textContent = '💧';
 
-  // run on load
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', updateScreenClass);
-  } else {
-    updateScreenClass();
-  }
+  const size = Math.random() * 20 + 20;
+  heart.style.fontSize = `${size}px`;
 
-  // run on resize (debounced)
-  let resizeTimer = null;
-  window.addEventListener('resize', () => {
-    if (resizeTimer) clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      updateScreenClass();
-      resizeTimer = null;
-    }, 120);
-  });
+  const left = Math.random() * window.innerWidth;
+  heart.style.left = `${left}px`;
 
-  // expose utility for other scripts if needed
-  window.cvScreen = {
-    isSmallScreen,
-    updateScreenClass,
-  };
-})();
+  const duration = Math.random() * 3 + 2;
+  heart.style.animationDuration = `${duration}s`;
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, duration * 1000);
+}
+
+setInterval(createHeart, 200);

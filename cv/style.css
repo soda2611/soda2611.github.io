@@ -54,6 +54,17 @@
     padding: 15px
 }
 
+#avt-frame {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    left: calc(50% - 60px);
+    top: 75px;
+    display: flex;
+    font-size: 0px;
+    transition: all 0.3s;
+}
+
 #avt {
     overflow: hidden;
     position: relative;
@@ -64,17 +75,10 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    left: calc(50% - 55px);
-    top: 75px;
     transition: all 0.3s, border-radius 0.75s;
 }
 
 #avt:hover {
-    width: 110px;
-    height: 110px;
-    left: calc(50% - 60px);
-    top: 70px;
-    border-radius: 0.5cm;
     box-shadow: #ffffff 0px 0px 30px;
     transition: all 0.3s, border-radius 0.75s;
 }

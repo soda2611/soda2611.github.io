@@ -4,7 +4,7 @@
     border-radius: 3.5rem;
     cursor: pointer;
     font-size: 15px;
-    font-family: "Coiny", "system-ui";
+    font-family: "Segoe UI", "system-ui";
     color: #ffffff;
     text-align: center;
     position: fixed;
@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 10px;
     gap: 5px;
     top: 10px;
     height: 30px;

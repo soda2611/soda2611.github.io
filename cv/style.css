@@ -56,7 +56,7 @@
 
 #bio-content {
     position: relative;
-    width: calc(100% - 10px);
+    width: calc(100% - 15px);
     height: 100%;
     left: 0;
     overflow: auto;
@@ -109,12 +109,12 @@
 }
 
 #avt:hover {
-    border-color: lightskyblue;
-    box-shadow: lightskyblue 0px 0px 30px;
+    border-color: #5B7B90;
+    box-shadow: #5B7B90 0px 0px 30px;
     transition: all 0.3s, border-radius 0.75s;
 }
 
-#image {
+.image {
     width: inherit;
 }
 
@@ -160,7 +160,7 @@
 
 .inner-skill {
     height: 100%;
-    background-color: lightskyblue;
+    background-color: #5B7B90;
     border-radius: 10cm;
     right: 0;
     transition: all 0.2s;

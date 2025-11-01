@@ -13,7 +13,7 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-async function fetchWeather(city = "Thành phố Hồ Chí Minh") {
+async function fetchWeather(city = "Vung Tau, VN") {
   const apiKey = "7d4c6ef369c5581c9b7a29b2614bffbf";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=vi`;
   try {

@@ -219,9 +219,3 @@ body {
     from {opacity: 0; top: 50%}
     to {opacity: 1; top: 10px;}
 }
-
-@media only screen and (orientation: landscape) {
-    body {
-        /* Tùy chỉnh giao diện cho landscape */
-    }
-}

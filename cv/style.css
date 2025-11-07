@@ -94,7 +94,7 @@ body {
     font-family: 'Segoe UI';
     left: 0;
     top: clamp(83px, 17.5vw, 175px);
-    padding: 15px;
+    padding: clamp(8px, 1.5vw, 16px);
     padding-left: clamp(10px, 2vw, 20px);
 }
 

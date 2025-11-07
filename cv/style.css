@@ -209,7 +209,7 @@ body {
 }
 
 #info::-webkit-scrollbar-thumb {
-    background-color: #adadad;
+    background-color: black;
 }
 
 #info::-webkit-scrollbar-thumb:hover {

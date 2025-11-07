@@ -95,8 +95,7 @@ body {
     left: 0;
     top: clamp(83px, 17.5vw, 175px);
     padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: clamp(10px, 2vw, 20px);
 }
 
 #avt-frame {
@@ -171,7 +170,7 @@ body {
 }
 
 .skill {
-    width: clamp(100px, 24vw, 240px);
+    width: inherit;
     height: clamp(6px, 1.2vw, 12px);
     background-color: #fffafa;
     border-radius: 10cm;

@@ -113,7 +113,7 @@ body {
     overflow: hidden;
     position: relative;
     width: inherit;
-    border: 5px solid #ffffff;
+    border: clamp(2px, 0.5vw, 5px) solid #ffffff;
     border-radius: 10cm;
     align-items: center;
     justify-content: center;

@@ -149,7 +149,7 @@ body {
     box-shadow: #5797ff 0px 0px 30px;
     font-size: clamp(7px, 1.4vw, 14px);
     gap: clamp(2.5px, 0.5vw, 5px);
-    padding: 0px 10px 0px 0px;
+    padding: 0px clamp(5px, 1vw, 10px) 0px 0px;
     transition: all 0.3s;
 }
 
@@ -157,7 +157,7 @@ body {
     box-shadow: #ff5f9f 0px 0px 30px;
     font-size: clamp(7px, 1.4vw, 14px);
     gap: clamp(2.5px, 0.5vw, 5px);
-    padding: 0px 10px 0px 0px;
+    padding: 0px clamp(5px, 1vw, 10px) 0px 0px;
     transition: all 0.3s;
 }
 
@@ -165,7 +165,7 @@ body {
     box-shadow: #ffffff 0px 0px 30px;
     font-size: clamp(7px, 1.4vw, 14px);
     gap: clamp(2.5px, 0.5vw, 5px);
-    padding: 0px 10px 0px 0px;
+    padding: 0px clamp(5px, 1vw, 10px) 0px 0px;
     transition: all 0.3s;
 }
 

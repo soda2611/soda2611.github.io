@@ -96,6 +96,7 @@ body {
     top: clamp(83px, 17.5vw, 175px);
     padding: 15px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 #avt-frame {

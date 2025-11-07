@@ -41,7 +41,7 @@ body {
 #content {
     position: absolute;
     display: flex;
-    width: clamp(300px, 100vw ,750px);
+    width: clamp(375px, 75vw ,750px);
     height: calc(100% - 40px);
     top: 10px;
     padding: 10px;
@@ -148,24 +148,24 @@ body {
 
 #fb:hover {
     box-shadow: #5797ff 0px 0px 30px;
-    font-size: 14px;
-    gap: 5px;
+    font-size: clamp(7px, 1.4vw, 14px);
+    gap: clamp(2.5px, 0.5vw, 5px);
     padding: 0px 10px 0px 0px;
     transition: all 0.3s;
 }
 
 #ig:hover {
     box-shadow: #ff5f9f 0px 0px 30px;
-    font-size: 14px;
-    gap: 5px;
+    font-size: clamp(7px, 1.4vw, 14px);
+    gap: clamp(2.5px, 0.5vw, 5px);
     padding: 0px 10px 0px 0px;
     transition: all 0.3s;
 }
 
 #gh:hover {
     box-shadow: #ffffff 0px 0px 30px;
-    font-size: 14px;
-    gap: 5px;
+    font-size: clamp(7px, 1.4vw, 14px);
+    gap: clamp(2.5px, 0.5vw, 5px);
     padding: 0px 10px 0px 0px;
     transition: all 0.3s;
 }

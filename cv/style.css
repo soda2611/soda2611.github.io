@@ -43,8 +43,8 @@ body {
     display: flex;
     width: clamp(375px, 75vw ,750px);
     height: calc(100% - 40px);
-    top: 10px;
-    padding: 10px;
+    top: clamp(5px, 1vw, 10px);
+    padding: clamp(5px, 1vw, 10px);
     background-color: #ebebeb;
     border-radius: 20px;
     box-shadow: 10px 10px 30px #303030aa;
@@ -58,10 +58,10 @@ body {
     font-family: 'Segoe UI';
     width: 60%;
     right: 0px;
-    bottom: 0;
+    bottom: 0px;
     border-radius: 0px 15px 15px 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: clamp(5px, 1vw, 10px);
+    padding-bottom: clamp(5px, 1vw, 10px);
 }
 
 #bio-content {
@@ -69,7 +69,6 @@ body {
     width: calc(100% - 10px);
     height: 100%;
     left: 0;
-    border-radius: 0px 10px 10px 0px;
     overflow: scroll;
 }
 
@@ -77,13 +76,24 @@ body {
     position: relative;
     background-color: black ;
     font-family: 'Segoe UI';
-    height: 100%;
+    height: calc(100% - clamp(10px, 2vw, 20px));
     width: 40%;
     left: 0;
     bottom: 0;
+    display: flex;
+    align-items: center;
     border-radius: 15px 0px 0px 15px;
+    padding-top: clamp(5px, 1vw, 10px);
+    padding-bottom: clamp(5px, 1vw, 10px);
+}
+
+#info-content {
+    position: relative;
+    font-family: 'Segoe UI';
+    height: 100%;
+    width: 100%;
+    left: 0px;
     overflow: scroll;
-    overflow-x: hidden;
     display: flex;
     justify-content: center;
 }
@@ -92,7 +102,7 @@ body {
     position: absolute;
     color: white;
     font-family: 'Segoe UI';
-    left: 0;
+    left: 0px;
     top: clamp(83px, 17.5vw, 175px);
     padding: clamp(8px, 1.5vw, 16px);
     padding-left: clamp(10px, 2vw, 20px);
@@ -170,7 +180,7 @@ body {
 }
 
 .skill {
-    width: inherit;
+    width: calc(100% - 25px);
     height: clamp(6px, 1.2vw, 12px);
     background-color: #fffafa;
     border-radius: 10cm;

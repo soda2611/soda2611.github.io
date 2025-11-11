@@ -71,11 +71,62 @@ body {
     animation-play-state: running;
 }
 
+
+#fish2 {
+    position: absolute;
+    right: -100px; bottom: 400px;
+    animation-name: fish1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#fish3 {
+    position: absolute;
+    left:-100px; bottom: 200px;
+    animation-name: turtle;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
 #clownfish {
     position: absolute;
     right: -100px; top: 150px;
     animation-name: clownfish;
     animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#clownfish1 {
+    position: absolute;
+    right: -100px; top: 250px;
+    animation-name: clownfish;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#clownfish2 {
+    position: absolute;
+    right: -100px; top: 100px;
+    animation-name: clownfish;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#clownfish3 {
+    position: absolute;
+    right: -100px; top: 300px;
+    animation-name: clownfish;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;

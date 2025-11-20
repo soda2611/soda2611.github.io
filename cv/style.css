@@ -67,6 +67,7 @@ body {
 #bio-content {
     position: relative;
     width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
     height: 100%;
     left: 0;
     overflow: scroll;

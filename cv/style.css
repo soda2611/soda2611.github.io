@@ -66,7 +66,7 @@ body {
 
 #bio-content {
     position: relative;
-    width: clamp(220px, 4.4vw, 440px);
+    width: calc(100% - 10px);
     height: 100%;
     left: 0;
     overflow: scroll;
@@ -91,7 +91,7 @@ body {
     position: relative;
     font-family: 'Segoe UI';
     height: 100%;
-    width: 100%;
+    width: clamp(150px, 3vw, 300px);
     left: 0px;
     overflow: scroll;
     display: flex;

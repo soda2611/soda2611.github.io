@@ -91,7 +91,7 @@ body {
     position: relative;
     font-family: 'Segoe UI';
     height: 100%;
-    width: 100%;
+    width: inherit;
     left: 0px;
     overflow: scroll;
     display: flex;
